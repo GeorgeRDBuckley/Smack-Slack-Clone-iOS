@@ -13,7 +13,7 @@ class ChannelVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        self.revealViewController().rearViewRevealWidth = self.view.frame.size.width - 85
+        self.revealViewController().rearViewRevealWidth = self.view.frame.size.width - 95
     }
 
     override func didReceiveMemoryWarning() {
@@ -21,6 +21,7 @@ class ChannelVC: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    
-
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
 }
